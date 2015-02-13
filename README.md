@@ -18,5 +18,7 @@ $ make all
 # Usage:
 
 ```
-$ vagrant up
+$ make install
+$ vagrant up --provider virtualbox
+$ vagrant ssh
 ```
