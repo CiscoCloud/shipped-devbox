@@ -1,6 +1,9 @@
 #!/bin/bash
 set -ex
 
+# Git
+yum install -y git 
+
 # Setup Docker.
 yum install docker -y
 systemctl enable docker
