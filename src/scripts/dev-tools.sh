@@ -5,7 +5,7 @@ set -ex
 yum install -y git 
 
 # Docker
-yum install docker -y
+yum install -y docker
 systemctl enable docker
 usermod -a -G docker vagrant
 
