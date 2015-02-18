@@ -5,7 +5,7 @@ set -ex
 yum install -y git 
 
 # Docker
-yum install -y http://cbs.centos.org/kojifiles/packages/docker/1.4.1/2.el7/x86_64/docker-1.4.1-2.el7.x86_64.rpm
+yum install -y http://cbs.centos.org/kojifiles/packages/docker/1.5.0/1.el7/x86_64/docker-1.5.0-1.el7.x86_64.rpm
 systemctl enable docker
 usermod -a -G docker vagrant
 
