@@ -7,6 +7,7 @@ yum install -y git
 # Docker
 yum install -y http://cbs.centos.org/kojifiles/packages/docker/1.5.0/1.el7/x86_64/docker-1.5.0-1.el7.x86_64.rpm
 systemctl enable docker
+groupadd docker
 usermod -a -G docker vagrant
 
 # Fig
