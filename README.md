@@ -9,10 +9,6 @@ Developer vagrant box for Shipped.
 * make
 * internet access
 
-# Packer installation note:
-* On MacOS X, after downloading the Packer package, copy the executables to `/usr/local/bin`.
-
-
 # Build:
 
 ```
@@ -27,3 +23,6 @@ $ vagrant box add --name=shipped-devbox shipped-devbox.box
 $ vagrant up --provider virtualbox
 $ vagrant ssh
 ```
+
+# Packer installation note:
+* On MacOS X, after downloading the Packer package, copy the executables to `/usr/local/bin`.
