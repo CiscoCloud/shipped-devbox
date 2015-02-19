@@ -9,8 +9,8 @@ Developer vagrant box for Shipped.
 * make
 * internet access
 
-# Packer Install
-* On MacOS X, after downloading the Packer package, you need to copy the executables to `/usr/local/bin`.
+# Packer installation note:
+* On MacOS X, after downloading the Packer package, copy the executables to `/usr/local/bin`.
 
 
 # Build:
