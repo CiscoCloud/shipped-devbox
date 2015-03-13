@@ -10,10 +10,10 @@ find /lib/modules -type f -name '*.ko' | while read KMOD; do
 done
  
 # Reduce size of locale files.
-localedef --list-archive | grep -a -v "en_US" | xargs localedef --delete-from-archive
-cp /usr/lib/locale/locale-archive{,.tmpl}
+localedef --list-archive | grep -a -v "en_US.utf8" | xargs localedef --delete-from-archive
+mv /usr/lib/locale/locale-archive /usr/lib/locale/locale-archive.tmpl
 build-locale-archive
-find /usr/{{lib,share}/locale,bin/localedef} -type f | grep -a -v "en_US" | xargs rm
+:>/usr/lib/locale/locale-archive.tmpl
 
 # Delete non-utf character sets.
 find /usr/lib64/gconv/ -type f ! -name "UTF*" -delete
