@@ -25,7 +25,7 @@
                                    "src/scripts/vagrant.sh",
                                    "src/scripts/virtualbox-guest-additions.sh",
                                    "src/scripts/dev-tools.sh",
-                                   "src/scripts/purge-kmods.sh",
+                                   "src/scripts/minimize.sh",
                                    "src/scripts/clean.sh"]
     }],
     "post-processors": [{
