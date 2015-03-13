@@ -11,7 +11,7 @@ done
  
 # Reduce size of locale files.
 localedef --list-archive | grep -a -v "en_US.utf8" | xargs localedef --delete-from-archive
-mv /usr/lib/locale/locale-archive /usr/lib/locale/locale-archive.tmpl
+cp /usr/lib/locale/locale-archive /usr/lib/locale/locale-archive.tmpl
 build-locale-archive
 :>/usr/lib/locale/locale-archive.tmpl
 
