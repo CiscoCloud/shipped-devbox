@@ -3,6 +3,11 @@ shipped-devbox
 
 Developer vagrant box for Shipped.
 
+# Provides:
+* CentOS 7 x86_64
+* Docker
+* Docker-compose
+
 # Requires:
 * VirtualBox >= 4.3.14 [Download](https://www.virtualbox.org/wiki/Downloads)
 * Packer [Download](https://www.packer.io/downloads.html)
