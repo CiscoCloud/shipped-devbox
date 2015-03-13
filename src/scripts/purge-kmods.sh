@@ -1,6 +1,6 @@
 #!/bin/bash
  
-# test for root effective privlidges
+# test for root effective privileges
 if [[ "$(id -u)" -ne 0 ]]; then
     echo "Error: $0 must execute as root."
     exit 1
