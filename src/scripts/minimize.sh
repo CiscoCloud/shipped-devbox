@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 # Create list of loaded kernel modules.
 lsmod | awk 'NR > 1 { print $1 }' > /tmp/kmod.lst
