@@ -24,8 +24,7 @@ $ make all
 
 ```
 $ make install
-$ vagrant box add --name=shipped-devbox shipped-devbox.box
-$ vagrant up --provider virtualbox
+$ vagrant up
 $ vagrant ssh
 ```
 
