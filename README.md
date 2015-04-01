@@ -6,7 +6,7 @@ Cisco Shipped developer Vagrant box (shipped-devbox) build code.
 * Docker
 * Docker-compose
 
-## Build requirements
+## Requirements
 * VirtualBox >= 4.3.14 [Download](https://www.virtualbox.org/wiki/Downloads)
 * Packer [Download](https://www.packer.io/downloads.html)
 * make
@@ -26,7 +26,7 @@ $ make install
 $ vagrant up
 ```
 
-## Artifact
+## Artifacts
 Artifacts are manually promoted to https://atlas.hashicorp.com/CiscoCloud/boxes/shipped-devbox
 
 ## License
