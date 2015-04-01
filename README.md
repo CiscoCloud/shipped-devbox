@@ -3,24 +3,24 @@ shipped-devbox
 
 Developer vagrant box for Shipped.
 
-# Provides:
+## Provides:
 * CentOS 7 x86_64
 * Docker
 * Docker-compose
 
-# Requires:
+## Requires:
 * VirtualBox >= 4.3.14 [Download](https://www.virtualbox.org/wiki/Downloads)
 * Packer [Download](https://www.packer.io/downloads.html)
 * make
 * internet access
 
-# Build:
+## Build:
 
 ```
 $ make all
 ```
 
-# Usage:
+## Usage:
 
 ```
 $ make install
@@ -28,5 +28,5 @@ $ vagrant up
 $ vagrant ssh
 ```
 
-# Packer installation note:
+## Packer installation note:
 * On MacOS X, after downloading the Packer package, copy the executables to `/usr/local/bin`.
