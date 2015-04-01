@@ -2,10 +2,12 @@
 
 This code builds the developer Vagrant box for Cisco Shipped.
 
+
 ## Provides:
 * CentOS 7 x86_64 (minimal)
 * Docker
 * Docker-compose
+
 
 ## Requirements:
 * VirtualBox >= 4.3.14 [Download](https://www.virtualbox.org/wiki/Downloads)
@@ -15,9 +17,11 @@ This code builds the developer Vagrant box for Cisco Shipped.
 
 Packer installation note: copy the executables to `/usr/local/bin`
 
+
 ## Build:
 ```
 $ make all
+
 ```
 
 ## Provision:
@@ -29,6 +33,7 @@ $ vagrant up
 
 ## Artifact:
 Artifacts are manually promoted to https://atlas.hashicorp.com/CiscoCloud/boxes/shipped-devbox
+
 
 ## License:
 Copyright © 2015 Cisco Systems, Inc.
