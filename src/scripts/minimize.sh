@@ -1,13 +1,5 @@
 #!/bin/bash
 set -x
-
-# Create list of loaded kernel modules.
-lsmod | awk 'NR > 1 { print $1 }' > /tmp/kmod.lst
- 
-# Delete all unloaded kernel modules.
-find /lib/modules -type f -name '*.ko' | while read KMOD; do
-    sed -re '/^(#.*)?$/d' /tmp/kmod.lst | egrep -q "^$(basename ${KMOD%%.ko})$" || rm -f "$KMOD"
-done
  
 # Reduce size of locale files.
 localedef --list-archive | grep -a -v "en_US.utf8" | xargs localedef --delete-from-archive
